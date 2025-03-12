@@ -1,0 +1,21 @@
+[features]
+seeds = true
+
+[programs.mainnet]
+coral_multisig = "msigUdDBsR4zSUYqYEDrc1LcgtmuSDDM7KxpRUXNC6U"
+
+[programs.devnet]
+coral_multisig = "msigUdDBsR4zSUYqYEDrc1LcgtmuSDDM7KxpRUXNC6U"
+
+[programs.localnet]
+coral_multisig = "msigUdDBsR4zSUYqYEDrc1LcgtmuSDDM7KxpRUXNC6U"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "npx mocha -t 1000000 tests/"
