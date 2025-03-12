@@ -1,0 +1,19 @@
+[package]
+name = "coral-multisig"
+version = "0.9.0"
+description = "Created with Anchor"
+edition = "2021"
+license = "Apache-2.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "coral_multisig"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.25.0"
